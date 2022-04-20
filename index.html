@@ -9,8 +9,15 @@
 </head>
 <body>
     <div class="navbar">
+        <label for="btn">Reset:</label>
         <button class="btn">Reset</button>
-        <input type="color" value="#00eeff" class="color">
+        <label for="redAmount">Red (0-255):</label>
+        <input type="number" value="0" min="0" max="255" class="redAmount">
+        <label for="greenAmount">Green (0-255):</label>
+        <input type="number" value="0" min="0" max="255" class="greenAmount">
+        <label for="blueAmount">Blue (0-255):</label>
+        <input type="number" value="0" min="0" max="255" class="blueAmount">
+        <label for="size">Grid Size (0-50):</label>
         <input type="number" value="30" class="size">
     </div>
     <div class="container">
