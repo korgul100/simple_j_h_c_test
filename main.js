@@ -1,8 +1,12 @@
 const container = document.querySelector('.container');
 const sizeEl = document.querySelector('.size');
 var size = sizeEl.value;
-const color = document.querySelector('.color');
+const red = document.querySelector('.redAmount');
+const green = document.querySelector('.greenAmount');
+const blue  = document.querySelector('.blueAmount');
 const resetBtn = document.querySelector('.btn');
+
+console.log("red = " + red.value);
 
 var draw = false;
 
@@ -13,10 +17,10 @@ function populate(size) {
         div.classList.add('pixel');
         div.addEventListener('mouseover', function() {
             if (!draw) return;
-            div.style.backgroundColor = color.value;
+            div.style.backgroundColor = 'rgb(' + red.value + ',' + green.value + ',' + blue.value + ')';
         });
         div.addEventListener('mousedown', function() {
-            div.style.backgroundColor = color.value;
+            div.style.backgroundColor = 'rgb(' + red.value + ',' + green.value + ',' + blue.value + ')';
         });
         container.appendChild(div);
     }

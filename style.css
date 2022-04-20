@@ -8,6 +8,10 @@ html, body {
     height: 100%;
 }
 
+label {
+  color: white;
+}
+
 body {
     background-color: greenyellow;
     display: flex;
@@ -19,13 +23,14 @@ body {
 
 .navbar, .container {
     background-color: black;
-    width: 600px;
+    width: 400px;
 }
 
 .navbar {
     padding: 1em;
     margin-bottom: 1em;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
 }
@@ -43,7 +48,7 @@ body {
 
 .container {
     --size: 4;
-    height: 600px;
+    height: 400px;
     display: grid;
     grid-template-columns: repeat(var(--size), 1fr);
     grid-template-rows: repeat(var(--size), 1fr);
